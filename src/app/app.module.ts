@@ -1,39 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RouterModule } from '@angular/router';
-import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
-import { HomeNavbarLeftComponent } from './home-navbar-left/home-navbar-left.component';
-import { HomeNavbarRightComponent } from './home-navbar-right/home-navbar-right.component';
-import { HomeContentComponent } from './home-content/home-content.component';
-import { MenuLeftSideComponent } from './menu-left-side/menu-left-side.component';
+import { ModLoginComponent } from './modules/mod-login/mod-login.component';
+import { ModHomeComponent } from './modules/mod-home/mod-home.component';
+import { ComNavbarComponent } from './component/com-navbar/com-navbar.component';
+
+
+const appRoutes: Routes = [
+  { path: '', component: ModLoginComponent },
+  { path: 'home', component: ModHomeComponent },
+  { path: 'com-navbar', component: ComNavbarComponent }
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    HomeNavbarComponent,
-    HomeNavbarLeftComponent,
-    HomeNavbarRightComponent,
-    HomeContentComponent,
-    MenuLeftSideComponent
+    ModLoginComponent,
+    ModHomeComponent,
+    ComNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {
-        path:'',
-        component: LoginComponent
-      },
-      {
-        path:'home',
-        component:HomeNavbarComponent
-      }
-    ])
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
