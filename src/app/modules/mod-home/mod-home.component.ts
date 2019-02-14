@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'mod-home',
@@ -13,7 +14,10 @@ export class ModHomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  goesNavbar() {
-    this.router.navigate(['com-navbar']);
+  showSidebarMenu() {
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
   }
 }
