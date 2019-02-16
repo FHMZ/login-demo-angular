@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'mod-login',
+  selector: 'app-mod-login',
   templateUrl: './mod-login.component.html',
   styleUrls: ['./mod-login.component.css']
 })
