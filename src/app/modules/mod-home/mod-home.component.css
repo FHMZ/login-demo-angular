@@ -1,27 +1,5 @@
-#sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-}
-
-#sidebar-wrapper .sidebar-heading {
-    padding: 21px 20px;
-    font-size: 20px;
-    color: rgb(33, 150, 243);
-    /*background: rgb(33, 150, 243);*/
-}
-
-#sidebar-wrapper .list-group {
-    width: 15rem;
-}
-
-#sidebar-wrapper .list-group .list-group-item {
-    font-size: 14px;
-    padding: 15px 20px;
-    border: none;
+#wrapper {
+    display: block;
 }
 
 #page-content-wrapper {
@@ -32,22 +10,86 @@
     margin-left: 0;
 }
 
-/*navbar/sidebar*/
+/*sidebar*/
 
-.navbar {
-    padding: 1.2rem 1rem 1rem 1rem;
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -17rem;
+    position: fixed;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    z-index: 9999;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 15px 20px;
+    background: whitesmoke;
+}
+
+#sidebar-wrapper .list-group {
+    width: 17rem;
+}
+
+#sidebar-wrapper .list-group .list-group-item {
+    font-size: 14px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#loja-dropdown-items {}
+
+.sidebar-heading i {
+    color: rgb(100, 100, 100);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.sidebar-heading h6 {
+    margin: 0;
+    color: rgb(33, 150, 243);
+}
+
+.icon-sidebar {
+    margin: 0 15px 0 0;
+    font-size: 16px;
+    color: rgb(100, 100, 100);
 }
 
 .btn-sidebar {
+    color: rgb(100, 100, 100);
     font-size: 14px;
     font-weight: 500;
 }
 
 .sidebar-divider {
     height: 0;
-    margin: 0.5rem 0;
+    margin: 0.1rem 0;
     overflow: hidden;
     border-top: 1px solid #eee;
+}
+
+/*sidebar-dropdown*/
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    color: rgb(100, 100, 100);
+    transform: translateY(-50%);
+}
+
+/*navbar*/
+
+.navbar {
+    padding: 1.2rem 1rem 1rem 1rem;
 }
 
 .btn-navbar {
@@ -65,12 +107,6 @@
 
 .btn-navbar-space {
     margin: 5px 5px;
-}
-
-.icon-sidebar {
-    margin: 0 15px 0 0;
-    font-size: 16px;
-    color: rgb(100, 100, 100);
 }
 
 /*left side*/
@@ -98,6 +134,6 @@
         width: 100%;
     }
     #wrapper.toggled #sidebar-wrapper {
-        margin-left: -15rem;
+        margin-left: -17rem;
     }
 }
