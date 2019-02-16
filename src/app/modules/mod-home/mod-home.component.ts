@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'mod-home',
+  selector: 'app-mod-home',
   templateUrl: './mod-home.component.html',
   styleUrls: ['./mod-home.component.css']
 })
@@ -12,13 +12,15 @@ export class ModHomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    $("#menu-toggle").click(function (e) {
+    const btnOpenSidebar = document.getElementById('menu-toggle');
+    btnOpenSidebar.addEventListener('click', function (e) {
       e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-    $("#sidebar").click(function (e) {
+      $('#wrapper').toggleClass('toggled');
+    }, false);
+    const sidebarHeading = document.getElementById('sidebar');
+    sidebarHeading.addEventListener('click', function (e) {
       e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
+      $('#wrapper').toggleClass('toggled');
+    }, false);
   }
 }
