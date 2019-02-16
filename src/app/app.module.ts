@@ -6,21 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModLoginComponent } from './modules/mod-login/mod-login.component';
 import { ModHomeComponent } from './modules/mod-home/mod-home.component';
-import { ComNavbarComponent } from './component/com-navbar/com-navbar.component';
-
 
 const appRoutes: Routes = [
   { path: '', component: ModLoginComponent },
-  { path: 'home', component: ModHomeComponent },
-  { path: 'com-navbar', component: ComNavbarComponent }
+  { path: 'home', component: ModHomeComponent }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     ModLoginComponent,
-    ModHomeComponent,
-    ComNavbarComponent
+    ModHomeComponent
   ],
   imports: [
     BrowserModule,

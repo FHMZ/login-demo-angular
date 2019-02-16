@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeNavbarLeftComponent } from './home-navbar-left.component';
+import { ModHomeComponent } from './mod-home.component';
 
-describe('HomeNavbarLeftComponent', () => {
-  let component: HomeNavbarLeftComponent;
-  let fixture: ComponentFixture<HomeNavbarLeftComponent>;
+describe('ModHomeComponent', () => {
+  let component: ModHomeComponent;
+  let fixture: ComponentFixture<ModHomeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeNavbarLeftComponent ]
+      declarations: [ ModHomeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeNavbarLeftComponent);
+    fixture = TestBed.createComponent(ModHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

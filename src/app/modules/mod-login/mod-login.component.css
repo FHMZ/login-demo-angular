@@ -1,14 +1,11 @@
-body, html {
-    font-family: 'Roboto Condensed', sans-serif;
-    overflow: hidden;
-    background-repeat: no-repeat;
-}
 h1 {
     font-weight: 500;
     font-size: 24px;
     text-align: center;
     color: #ddbe1c;
-}    
+    width: 100%;
+}
+
 h2 {
     font-weight: 400;
     font-size: 24px;
@@ -16,39 +13,26 @@ h2 {
     color: #2e2e2e;
     margin-bottom: 0;
 }
-#login {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: #fff;
-}
-#login .row {
-    padding-top: 5px;
-}
 
-#login .card {
+.card {
     background-color: #fff;
     padding: 0 20px;
     min-width: 380px;
     margin: 50px auto 10px auto;
-    /*box-shadow: 0 2px 10px -3px #333;*/
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     overflow: hidden;
     border-radius: 8px;
 }
-    #login .card form {
-        margin-top: 35px;
-    }
-    
-    #login .card .btn {
-        margin-top: 10px;
-        font-weight: 700;
-        border-radius: 50px;
-    }
+
+#input-email, #input-password {
+    padding: 5px;
+    font-size: 15px;
+}
+
 .form-group button {
     font-weight: 500;
     border-radius: 20px;
     border: none;
-    background: rgb(33, 150, 243);
     width: 100%;
     padding: 10px;
     color: #fff;
@@ -57,30 +41,52 @@ h2 {
     display: block;
     margin: 20px auto 5px auto;
     cursor: pointer;
-}    
+}
+
 .form-group button:hover {
     box-shadow: 0 3px 12px -3px #333;
 }
-.img-login {
+
+.card-heading {
     width: 82px;
     height: 82px;
     background-color: rgb(235, 235, 235);
-    margin: 0 auto 10px;
     display: block;
+    margin: 0 auto 15px;
+    align-content: center;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-.img-login i {
+
+.card-heading i {
     padding-top: 23px;
+    padding-left: 15px;
     font-size: 40px;
     color: #ddbe1c;
 }
+
 a.link-access {
     display: block;
     margin-top: 0;
 }
-.form-group a.link-access, a.link-access{
+
+.form-group a.link-access, a.link-access {
     font-weight: 500;
     font-size: 14px
-} 
+}
+
+@media (max-width: 575.98px) {
+    .card {
+        box-shadow: none;
+        margin: auto;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+    }
+    .card-body {
+        overflow: hidden;
+    }
+    .form-group button {
+        margin-top: 50px;
+    }
+}
