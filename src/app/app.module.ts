@@ -9,14 +9,15 @@ import { ModHomeComponent } from './modules/mod-home/mod-home.component';
 
 const appRoutes: Routes = [
   { path: '', component: ModLoginComponent },
-  { path: 'home', component: ModHomeComponent }
-]
+  { path: 'home', component: ModHomeComponent },
+  // { path: 'carrinho', component: ModCarrinhoComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     ModLoginComponent,
-    ModHomeComponent
+    ModHomeComponent,
   ],
   imports: [
     BrowserModule,

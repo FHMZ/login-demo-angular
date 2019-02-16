@@ -1,5 +1,5 @@
 #wrapper {
-  display: block;
+  height: 100%;
 }
 
 #page-content-wrapper {
@@ -8,6 +8,8 @@
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+  z-index: 1;
+  position: sticky;
 }
 
 /*sidebar*/

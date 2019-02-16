@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -9,7 +9,8 @@ import * as $ from 'jquery';
 })
 export class ModHomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
     const btnOpenSidebar = document.getElementById('menu-toggle');
