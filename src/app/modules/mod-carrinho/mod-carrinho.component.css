@@ -1,9 +1,13 @@
-#content {
+#content-empty {
   margin-top: 80px;
 }
 
-#content .form-group button {
+#content-empty .form-group button {
   margin: 20px auto 15px;
   align-content: center;
   display: block;
+}
+
+#content-empty .form-group button i {
+  padding-right: 10px;
 }
