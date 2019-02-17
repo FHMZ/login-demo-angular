@@ -13,15 +13,15 @@ export class ModHomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    const btnOpenSidebar = document.getElementById('menu-toggle');
-    btnOpenSidebar.addEventListener('click', function (e) {
-      e.preventDefault();
-      $('#wrapper').toggleClass('toggled');
-    }, false);
-    const sidebarHeading = document.getElementById('sidebar');
-    sidebarHeading.addEventListener('click', function (e) {
-      e.preventDefault();
-      $('#wrapper').toggleClass('toggled');
-    }, false);
+    // const btnOpenSidebar = document.getElementById('menu-toggle');
+    // btnOpenSidebar.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   $('#wrapper').toggleClass('toggled');
+    // }, false);
+    // const sidebarHeading = document.getElementById('sidebar');
+    // sidebarHeading.addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   $('#wrapper').toggleClass('toggled');
+    // }, false);
   }
 }
