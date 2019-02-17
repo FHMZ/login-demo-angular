@@ -1,2 +1,57 @@
 @import url('https://bootswatch.com/4/materia/bootstrap.min.css');
 
+/*
+*  global css app
+*/
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*round-background-logo*/
+.logo-background, .logo-background-lg {
+  background-color: rgb(235, 235, 235);
+  display: block;
+  margin: 0 auto 15px;
+  align-content: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.logo-background {
+  width: 82px;
+  height: 82px;
+}
+
+.logo-background-lg {
+  width: 150px;
+  height: 150px;
+}
+
+.logo-background i {
+  padding-top: 23px;
+  padding-left: 15px;
+  font-size: 40px;
+  color: #ddbe1c;
+}
+
+.logo-background-lg i {
+  padding-top: 32px;
+  padding-left: 24px;
+  color: #ddbe1c;
+  font-size: 90px;
+}
+
+/*==========================*/
+
+/*@media (min-width: 768px) {*/
+  /*body {*/
+    /*height: 100% !important;*/
+    /*width: 100% !important;*/
+  /*}*/
+/*}*/
