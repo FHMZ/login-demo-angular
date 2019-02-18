@@ -15,6 +15,6 @@ export class ModLoginComponent implements OnInit {
   }
 
   logarApp() {
-    this.router.navigate(['home']);
+    this.router.navigate(['/home']);
   }
 }
