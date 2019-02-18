@@ -53,11 +53,12 @@ body {
 }
 
 /* card product */
-#content {
+#content-products {
   margin: 40px 25px;
 }
 
 .card {
+  border-radius: 5px;
   box-shadow: 0 2px 10px -3px #333;
 }
 
@@ -71,11 +72,15 @@ body {
 }
 
 .img-md {
-  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 180px;
 }
 
 .img-lg {
-  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 230px;
 }
 
 /* Medium devices (tablets, 768px and up) */
