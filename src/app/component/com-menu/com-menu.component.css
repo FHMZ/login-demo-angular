@@ -15,18 +15,18 @@
 /*sidebar*/
 
 #sidebar-wrapper {
+  z-index: 9999;
+  position: fixed;
   min-height: 100vh;
   margin-left: -17rem;
-  position: fixed;
+  transition: margin .25s ease-out;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
-  z-index: 9999;
 }
 
-#sidebar-wrapper .sidebar-heading {
-  padding: 15px 20px;
+#sidebar-wrapper .sidebar-header {
+  padding: 20px;
   background: rgb(230, 229, 229);
 }
 
@@ -41,13 +41,13 @@
   cursor: pointer;
 }
 
-.sidebar-heading i {
+.sidebar-header i {
   color: rgb(100, 100, 100);
   font-size: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.sidebar-heading h6 {
+.sidebar-header h6 {
   margin: 0;
   color: rgb(33, 150, 243);
 }
@@ -121,14 +121,14 @@ a[data-toggle="collapse"] {
 
 /*left side*/
 
-.navbar-left {
+.navbar-pull-left {
   margin-right: auto;
   margin-left: 0;
 }
 
 /*right-side*/
 
-.navbar-right {
+.navbar-pull-right {
   margin-right: 0;
   margin-left: auto;
 }
