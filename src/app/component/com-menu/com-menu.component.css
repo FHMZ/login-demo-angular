@@ -31,7 +31,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 17rem;
+  width: 16rem;
 }
 
 #sidebar-wrapper .list-group .list-group-item {
@@ -146,7 +146,7 @@ a[data-toggle="collapse"] {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -17rem;
+    margin-left: -16rem;
     /*position: sticky;*/
   }
 }
