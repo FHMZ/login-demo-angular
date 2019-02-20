@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-com-menu',
@@ -12,12 +13,12 @@ export class ComMenuComponent implements OnInit {
 
   ngOnInit() {
     const btnOpenSidebar = document.getElementById('menu-toggle');
+    const sidebarHeader = document.getElementById('sidebar');
     btnOpenSidebar.addEventListener('click', function (e) {
       e.preventDefault();
       $('#wrapper').toggleClass('toggled');
     }, false);
-    const sidebarHeading = document.getElementById('sidebar');
-    sidebarHeading.addEventListener('click', function (e) {
+    sidebarHeader.addEventListener('click', function (e) {
       e.preventDefault();
       $('#wrapper').toggleClass('toggled');
     }, false);

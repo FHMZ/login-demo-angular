@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-mod-home',
@@ -9,19 +7,9 @@ import * as $ from 'jquery';
 })
 export class ModHomeComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor() {
   }
 
   ngOnInit() {
-    // const btnOpenSidebar = document.getElementById('menu-toggle');
-    // btnOpenSidebar.addEventListener('click', function (e) {
-    //   e.preventDefault();
-    //   $('#wrapper').toggleClass('toggled');
-    // }, false);
-    // const sidebarHeading = document.getElementById('sidebar');
-    // sidebarHeading.addEventListener('click', function (e) {
-    //   e.preventDefault();
-    //   $('#wrapper').toggleClass('toggled');
-    // }, false);
   }
 }
