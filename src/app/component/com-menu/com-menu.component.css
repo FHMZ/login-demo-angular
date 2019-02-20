@@ -18,7 +18,7 @@
   z-index: 9999;
   position: fixed;
   min-height: 100vh;
-  margin-left: -16rem;
+  margin-left: -17rem;
   transition: margin .25s ease-out;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -31,7 +31,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 16rem;
+  width: 17rem;
 }
 
 #sidebar-wrapper .list-group .list-group-item {
@@ -54,7 +54,7 @@
 
 .icon-sidebar {
   margin: 0 25px 0 0;
-  font-size: 16px;
+  font-size: 17px;
   color: rgb(100, 100, 100);
 }
 
@@ -146,7 +146,7 @@ a[data-toggle="collapse"] {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -16rem;
+    margin-left: -17rem;
     /*position: sticky;*/
   }
 }
