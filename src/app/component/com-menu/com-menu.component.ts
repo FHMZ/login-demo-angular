@@ -12,12 +12,7 @@ export class ComMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    const btnOpenSidebar = document.getElementById('menu-toggle');
     const sidebarHeader = document.getElementById('sidebar');
-    btnOpenSidebar.addEventListener('click', function (e) {
-      e.preventDefault();
-      $('#wrapper').toggleClass('toggled');
-    }, false);
     sidebarHeader.addEventListener('click', function (e) {
       e.preventDefault();
       $('#wrapper').toggleClass('toggled');
