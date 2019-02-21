@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-com-navbar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    const btnOpenSidebar = document.getElementById('menu-toggle');
+    btnOpenSidebar.addEventListener('click', function (e) {
+      e.preventDefault();
+      $('#wrapper').toggleClass('toggled');
+    }, false);
   }
 
 }

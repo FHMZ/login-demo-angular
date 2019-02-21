@@ -1,12 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 // import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { ComMenuComponent } from './component/com-menu/com-menu.component';
-import { AppRoutingModule, routingComponents } from './app-routing.module';
-import { ComFooterComponent } from './component/com-footer/com-footer.component';
-import { ComNavbarComponent } from './component/com-navbar/com-navbar.component';
+import {AppComponent} from './app.component';
+import {ComMenuComponent} from './component/com-menu/com-menu.component';
+import {AppRoutingModule, routingComponents} from './app-routing.module';
+import {ComFooterComponent} from './component/com-footer/com-footer.component';
+import {ComNavbarComponent} from './component/com-navbar/com-navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,4 +23,5 @@ import { ComNavbarComponent } from './component/com-navbar/com-navbar.component'
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
